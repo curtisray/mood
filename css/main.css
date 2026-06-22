@@ -1,0 +1,41 @@
+/* ─── Mood Brand Tokens ─────────────────────────────────────────────────── */
+:root {
+  /* Primary */
+  --color-coral:      #F2867E; /* Petal Coral — brand base */
+  --color-red:        #DE1C36; /* Mood Red — accent / CTA */
+  --color-garnet:     #9E1B3A; /* Garnet — depth / clinical */
+
+  /* Tints & paper */
+  --color-blush:      #FBD9DC; /* soft fills */
+  --color-cream:      #FFF7F4; /* page background / paper */
+  --color-greige:     #ECE6DF; /* surface / neutral */
+
+  /* Ink */
+  --color-ink:        #3A1418; /* Aubergine Ink — body text */
+  --color-secondary:  #8A6A6C; /* Mauve Gray — secondary text */
+
+  /* ─── Typography ───────────────────────────────────────────────────────── */
+  --font-display: 'Newsreader', serif;       /* headings, voice, logo */
+  --font-body:    'Hanken Grotesk', sans-serif; /* body, labels, facts */
+
+  /* Type scale */
+  --text-display:  clamp(40px, 6vw, 60px);  /* Newsreader Medium, -0.02em */
+  --text-headline: clamp(28px, 4vw, 38px);  /* Newsreader Medium, -0.01em */
+  --text-subhead:  23px;                     /* Newsreader Italic */
+  --text-body:     17px;                     /* Hanken Regular, lh 1.6 */
+  --text-label:    12px;                     /* Hanken Semibold, 0.34em, uppercase */
+  --text-caption:  13px;                     /* Hanken Medium */
+}
+
+/* ─── Reset ─────────────────────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--color-cream);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}

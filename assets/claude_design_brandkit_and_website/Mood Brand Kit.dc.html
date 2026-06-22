@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; }
+</style>
+</helmet>
+
+<div style="background:#F3EEE7; font-family:'Hanken Grotesk',sans-serif; color:#3A1418;">
+<div style="max-width:1180px; margin:0 auto; padding:0 40px;">
+
+  <!-- ============================ COVER ============================ -->
+  <section style="padding:40px 0;">
+    <div style="background:#F2867E; border-radius:28px; overflow:hidden; position:relative; padding:84px 64px 76px;">
+      <div style="display:flex; justify-content:space-between; align-items:flex-start;">
+        <div style="font-size:12px; font-weight:600; letter-spacing:0.32em; text-transform:uppercase; color:rgba(255,247,244,0.85);">Brand Kit</div>
+        <div style="font-size:12px; font-weight:600; letter-spacing:0.32em; text-transform:uppercase; color:rgba(255,247,244,0.85);">2026 · v1</div>
+      </div>
+      <div style="display:flex; flex-direction:column; align-items:center; padding:56px 0 36px;">
+        <div style="font-family:'Newsreader',serif; font-weight:500; font-size:152px; line-height:0.82; letter-spacing:-0.03em; color:#FFF7F4;">mood</div>
+        <svg width="220" height="34" viewBox="0 0 220 34" fill="none" style="margin-top:14px;"><path d="M14 9 Q110 46 206 9" stroke="#FFF7F4" stroke-width="6" stroke-linecap="round"/></svg>
+        <div style="font-size:14px; font-weight:600; letter-spacing:0.42em; text-transform:uppercase; color:rgba(255,247,244,0.92); margin-top:26px;">by Danchel</div>
+      </div>
+      <div style="display:flex; justify-content:center;">
+        <p style="font-family:'Newsreader',serif; font-style:italic; font-weight:400; font-size:24px; color:#FFF7F4; margin:0; text-align:center;">{{ tagline }}</p>
+      </div>
+    </div>
+    <div style="display:flex; justify-content:space-between; align-items:flex-end; margin-top:28px; flex-wrap:wrap; gap:20px;">
+      <p style="max-width:620px; font-size:17px; line-height:1.6; color:#6E5559; margin:0;">{{ coverHeadline }} The visual system for Mood — a women's intimate-wellness line from Danchel. Warm and reassuring, grounded in clinical trust. This kit covers the logo, color, type, and iconography.</p>
+      <div style="display:flex; gap:9px;">
+        <div style="width:30px; height:30px; border-radius:50%; background:#F2867E;"></div>
+        <div style="width:30px; height:30px; border-radius:50%; background:#DE1C36;"></div>
+        <div style="width:30px; height:30px; border-radius:50%; background:#9E1B3A;"></div>
+        <div style="width:30px; height:30px; border-radius:50%; background:#FBD9DC;"></div>
+        <div style="width:30px; height:30px; border-radius:50%; background:#FFF7F4; border:1px solid #E2D7CF;"></div>
+        <div style="width:30px; height:30px; border-radius:50%; background:#3A1418;"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ 01 — LOGO ============================ -->
+  <section style="padding:56px 0 24px;">
+    <div style="display:flex; align-items:baseline; gap:16px; border-top:1px solid #D8CFC6; padding-top:26px; margin-bottom:36px;">
+      <span style="font-family:'Newsreader',serif; font-style:italic; font-size:20px; color:#C2566B;">01</span>
+      <h2 style="font-family:'Newsreader',serif; font-weight:500; font-size:32px; letter-spacing:-0.01em; margin:0;">The logo</h2>
+      <span style="font-size:14px; color:#8A6A6C; margin-left:6px;">Lowercase serif wordmark with the “oo” smile. Mood leads; Danchel endorses.</span>
+    </div>
+
+    <!-- primary + reversed -->
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:20px; margin-bottom:20px;">
+      <div style="background:#FFF7F4; border-radius:20px; height:300px; display:flex; flex-direction:column; align-items:center; justify-content:center;">
+        <div style="font-family:'Newsreader',serif; font-weight:500; font-size:96px; line-height:0.82; letter-spacing:-0.03em; color:#3A1418;">mood</div>
+        <svg width="150" height="24" viewBox="0 0 150 24" fill="none" style="margin-top:10px;"><path d="M10 7 Q75 31 140 7" stroke="#DE1C36" stroke-width="4.5" stroke-linecap="round"/></svg>
+        <div style="font-size:11px; font-weight:600; letter-spacing:0.4em; text-transform:uppercase; color:#B49A95; margin-top:18px;">by Danchel</div>
+        <div style="font-size:12px; color:#9A827E; margin-top:26px; letter-spacing:0.04em;">Primary lockup — on cream</div>
+      </div>
+      <div style="background:#F2867E; border-radius:20px; height:300px; display:flex; flex-direction:column; align-items:center; justify-content:center;">
+        <div style="font-family:'Newsreader',serif; font-weight:500; font-size:96px; line-height:0.82; letter-spacing:-0.03em; color:#FFF7F4;">mood</div>
+        <svg width="150" height="24" viewBox="0 0 150 24" fill="none" style="margin-top:10px;"><path d="M10 7 Q75 31 140 7" stroke="#FFF7F4" stroke-width="4.5" stroke-linecap="round"/></svg>
+        <div style="font-size:11px; font-weight:600; letter-spacing:0.4em; text-transform:uppercase; color:rgba(255,247,244,0.85); margin-top:18px;">by Danchel</div>
+        <div style="font-size:12px; color:rgba(255,247,244,0.8); margin-top:26px; letter-spacing:0.04em;">Reversed — on coral</div>
+      </div>
+    </div>
+
+    <!-- signature + clearspace + appicon -->
+    <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:20px;">
+      <!-- signature oo -->
+      <div style="background:#FBD9DC; border-radius:20px; height:240px; display:flex; flex-direction:column; align-items:center; justify-content:center;">
+        <div style="display:flex; flex-direction:column; align-items:center; gap:6px;">
+          <div style="font-family:'Newsreader',serif; font-weight:500; font-size:104px; line-height:0.78; letter-spacing:0.02em; color:#DE1C36;">oo</div>
+          <svg width="126" height="22" viewBox="0 0 126 22" fill="none"><path d="M8 6 Q63 28 118 6" stroke="#DE1C36" stroke-width="4" stroke-linecap="round"/></svg>
+        </div>
+        <div style="font-size:12px; color:#9A827E; margin-top:22px; letter-spacing:0.04em;">“oo” smile — brand device</div>
+      </div>
+      <!-- clear space -->
+      <div style="background:#FFF7F4; border-radius:20px; height:240px; display:flex; flex-direction:column; align-items:center; justify-content:center; position:relative;">
+        <div style="position:relative; padding:38px;">
+          <div style="position:absolute; inset:0; border:1px dashed #E0A9A0; border-radius:8px;"></div>
+          <div style="position:absolute; top:8px; left:8px; width:22px; height:22px; border-left:2px solid #F2867E; border-top:2px solid #F2867E;"></div>
+          <div style="position:absolute; bottom:8px; right:8px; width:22px; height:22px; border-right:2px solid #F2867E; border-bottom:2px solid #F2867E;"></div>
+          <div style="font-family:'Newsreader',serif; font-weight:500; font-size:54px; line-height:0.85; letter-spacing:-0.03em; color:#3A1418;">mood</div>
+        </div>
+        <div style="font-size:12px; color:#9A827E; margin-top:18px; letter-spacing:0.04em;">Clear space = cap height of “m”</div>
+      </div>
+      <!-- app icon -->
+      <div style="background:#ECE6DF; border-radius:20px; height:240px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:18px;">
+        <div style="display:flex; gap:14px; align-items:center;">
+          <div style="width:78px; height:78px; border-radius:20px; background:#DE1C36; display:flex; align-items:center; justify-content:center;">
+            <span style="font-family:'Newsreader',serif; font-weight:500; font-size:46px; color:#FFF7F4; line-height:1;">m</span>
+          </div>
+          <div style="width:78px; height:78px; border-radius:20px; background:#F2867E; display:flex; align-items:center; justify-content:center;">
+            <span style="font-family:'Newsreader',serif; font-weight:500; font-size:40px; color:#FFF7F4; line-height:1; letter-spacing:0.02em;">oo</span>
+          </div>
+        </div>
+        <div style="font-size:12px; color:#9A827E; letter-spacing:0.04em;">In-feed app / avatar</div>
+      </div>
+    </div>
+
+    <!-- misuse -->
+    <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:20px; margin-top:20px;">
+      <div style="background:#FFF7F4; border-radius:16px; padding:22px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:14px; height:150px;">
+        <div style="font-family:'Newsreader',serif; font-weight:500; font-size:34px; color:#3A1418; transform:rotate(-8deg); letter-spacing:-0.03em;">mood</div>
+        <div style="font-size:12px; color:#B23A48; font-weight:600;">✕ &nbsp;Don't rotate</div>
+      </div>
+      <div style="background:#FFF7F4; border-radius:16px; padding:22px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:14px; height:150px;">
+        <div style="font-family:'Hanken Grotesk',sans-serif; font-weight:800; font-size:34px; color:#3A1418; letter-spacing:-0.03em;">mood</div>
+        <div style="font-size:12px; color:#B23A48; font-weight:600;">✕ &nbsp;Don't swap the font</div>
+      </div>
+      <div style="background:#7B4B94; border-radius:16px; padding:22px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:14px; height:150px;">
+        <div style="font-family:'Newsreader',serif; font-weight:500; font-size:34px; color:#FFF7F4; letter-spacing:-0.03em;">mood</div>
+        <div style="font-size:12px; color:#FBD9DC; font-weight:600;">✕ &nbsp;Don't use off-brand color</div>
+      </div>
+      <div style="background:#FFF7F4; border-radius:16px; padding:22px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:14px; height:150px;">
+        <div style="font-family:'Newsreader',serif; font-weight:500; font-size:34px; color:#3A1418; letter-spacing:0.22em;">mood</div>
+        <div style="font-size:12px; color:#B23A48; font-weight:600;">✕ &nbsp;Don't track out</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ 02 — COLOR ============================ -->
+  <section style="padding:56px 0 24px;">
+    <div style="display:flex; align-items:baseline; gap:16px; border-top:1px solid #D8CFC6; padding-top:26px; margin-bottom:36px;">
+      <span style="font-family:'Newsreader',serif; font-style:italic; font-size:20px; color:#C2566B;">02</span>
+      <h2 style="font-family:'Newsreader',serif; font-weight:500; font-size:32px; letter-spacing:-0.01em; margin:0;">Color</h2>
+      <span style="font-size:14px; color:#8A6A6C; margin-left:6px;">A disciplined warm-red family. Coral carries the brand; red activates; cream keeps it breathable.</span>
+    </div>
+
+    <!-- Primary -->
+    <div style="font-size:11px; font-weight:600; letter-spacing:0.32em; text-transform:uppercase; color:#A8918C; margin-bottom:14px;">Primary</div>
+    <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-bottom:32px;">
+      <div style="border-radius:18px; overflow:hidden; background:#FFF7F4;">
+        <div style="height:140px; background:#F2867E;"></div>
+        <div style="padding:16px 18px;">
+          <div style="font-family:'Newsreader',serif; font-size:20px; font-weight:500;">Petal Coral</div>
+          <div style="display:flex; justify-content:space-between; margin-top:6px; font-size:13px; color:#8A6A6C;"><span>#F2867E</span><span>Brand base</span></div>
+        </div>
+      </div>
+      <div style="border-radius:18px; overflow:hidden; background:#FFF7F4;">
+        <div style="height:140px; background:#DE1C36;"></div>
+        <div style="padding:16px 18px;">
+          <div style="font-family:'Newsreader',serif; font-size:20px; font-weight:500;">Mood Red</div>
+          <div style="display:flex; justify-content:space-between; margin-top:6px; font-size:13px; color:#8A6A6C;"><span>#DE1C36</span><span>Accent / CTA</span></div>
+        </div>
+      </div>
+      <div style="border-radius:18px; overflow:hidden; background:#FFF7F4;">
+        <div style="height:140px; background:#9E1B3A;"></div>
+        <div style="padding:16px 18px;">
+          <div style="font-family:'Newsreader',serif; font-size:20px; font-weight:500;">Garnet</div>
+          <div style="display:flex; justify-content:space-between; margin-top:6px; font-size:13px; color:#8A6A6C;"><span>#9E1B3A</span><span>Depth / clinical</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tints & paper -->
+    <div style="font-size:11px; font-weight:600; letter-spacing:0.32em; text-transform:uppercase; color:#A8918C; margin-bottom:14px;">Tints &amp; paper</div>
+    <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-bottom:32px;">
+      <div style="border-radius:18px; overflow:hidden; background:#FFF7F4; border:1px solid #EEE3DB;">
+        <div style="height:140px; background:#FBD9DC;"></div>
+        <div style="padding:16px 18px;">
+          <div style="font-family:'Newsreader',serif; font-size:20px; font-weight:500;">Blush</div>
+          <div style="display:flex; justify-content:space-between; margin-top:6px; font-size:13px; color:#8A6A6C;"><span>#FBD9DC</span><span>Soft fills</span></div>
+        </div>
+      </div>
+      <div style="border-radius:18px; overflow:hidden; background:#FFF7F4; border:1px solid #EEE3DB;">
+        <div style="height:140px; background:#FFF7F4; border-bottom:1px solid #EEE3DB;"></div>
+        <div style="padding:16px 18px;">
+          <div style="font-family:'Newsreader',serif; font-size:20px; font-weight:500;">Cream</div>
+          <div style="display:flex; justify-content:space-between; margin-top:6px; font-size:13px; color:#8A6A6C;"><span>#FFF7F4</span><span>Paper / base</span></div>
+        </div>
+      </div>
+      <div style="border-radius:18px; overflow:hidden; background:#FFF7F4; border:1px solid #EEE3DB;">
+        <div style="height:140px; background:#ECE6DF;"></div>
+        <div style="padding:16px 18px;">
+          <div style="font-family:'Newsreader',serif; font-size:20px; font-weight:500;">Greige</div>
+          <div style="display:flex; justify-content:space-between; margin-top:6px; font-size:13px; color:#8A6A6C;"><span>#ECE6DF</span><span>Surface / neutral</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ink & neutral -->
+    <div style="font-size:11px; font-weight:600; letter-spacing:0.32em; text-transform:uppercase; color:#A8918C; margin-bottom:14px;">Ink &amp; neutral</div>
+    <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:16px;">
+      <div style="border-radius:18px; overflow:hidden; background:#FFF7F4;">
+        <div style="height:140px; background:#3A1418;"></div>
+        <div style="padding:16px 18px;">
+          <div style="font-family:'Newsreader',serif; font-size:20px; font-weight:500;">Aubergine Ink</div>
+          <div style="display:flex; justify-content:space-between; margin-top:6px; font-size:13px; color:#8A6A6C;"><span>#3A1418</span><span>Body text</span></div>
+        </div>
+      </div>
+      <div style="border-radius:18px; overflow:hidden; background:#FFF7F4;">
+        <div style="height:140px; background:#8A6A6C;"></div>
+        <div style="padding:16px 18px;">
+          <div style="font-family:'Newsreader',serif; font-size:20px; font-weight:500;">Mauve Gray</div>
+          <div style="display:flex; justify-content:space-between; margin-top:6px; font-size:13px; color:#8A6A6C;"><span>#8A6A6C</span><span>Secondary text</span></div>
+        </div>
+      </div>
+      <div style="border-radius:18px; overflow:hidden; background:#FFF7F4; display:flex; flex-direction:column;">
+        <div style="flex:1; padding:18px 20px; display:flex; flex-direction:column; justify-content:center; gap:8px;">
+          <div style="font-family:'Newsreader',serif; font-size:18px; font-weight:500;">Usage ratio</div>
+          <div style="display:flex; height:30px; border-radius:8px; overflow:hidden;">
+            <div style="width:54%; background:#FFF7F4; border:1px solid #EEE3DB;"></div>
+            <div style="width:24%; background:#F2867E;"></div>
+            <div style="width:14%; background:#DE1C36;"></div>
+            <div style="width:8%; background:#3A1418;"></div>
+          </div>
+          <div style="font-size:12.5px; color:#8A6A6C; line-height:1.5;">Lead with cream &amp; coral. Reserve Mood Red for accents and calls-to-action; ink for text. Keep saturation calm — this is wellness, not warning.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ 03 — TYPOGRAPHY ============================ -->
+  <section style="padding:56px 0 24px;">
+    <div style="display:flex; align-items:baseline; gap:16px; border-top:1px solid #D8CFC6; padding-top:26px; margin-bottom:36px;">
+      <span style="font-family:'Newsreader',serif; font-style:italic; font-size:20px; color:#C2566B;">03</span>
+      <h2 style="font-family:'Newsreader',serif; font-weight:500; font-size:32px; letter-spacing:-0.01em; margin:0;">Typography</h2>
+      <span style="font-size:14px; color:#8A6A6C; margin-left:6px;">A warm serif for voice, a clear grotesk for facts. Two families, no exceptions.</span>
+    </div>
+
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:20px; margin-bottom:20px;">
+      <!-- Newsreader -->
+      <div style="background:#FFF7F4; border-radius:20px; padding:34px 36px;">
+        <div style="display:flex; justify-content:space-between; align-items:baseline;">
+          <div style="font-size:11px; font-weight:600; letter-spacing:0.3em; text-transform:uppercase; color:#A8918C;">Display &amp; voice</div>
+          <div style="font-size:13px; color:#8A6A6C;">Newsreader</div>
+        </div>
+        <div style="font-family:'Newsreader',serif; font-weight:500; font-size:108px; line-height:1; letter-spacing:-0.02em; margin:18px 0 4px;">Aa</div>
+        <div style="font-family:'Newsreader',serif; font-weight:400; font-size:17px; color:#6E5559; letter-spacing:0.01em;">ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz 0123456789</div>
+        <div style="font-size:13px; color:#8A6A6C; margin-top:18px;">Regular · Medium · <span style="font-style:italic;">Italic</span></div>
+      </div>
+      <!-- Hanken -->
+      <div style="background:#FFF7F4; border-radius:20px; padding:34px 36px;">
+        <div style="display:flex; justify-content:space-between; align-items:baseline;">
+          <div style="font-size:11px; font-weight:600; letter-spacing:0.3em; text-transform:uppercase; color:#A8918C;">Text &amp; facts</div>
+          <div style="font-size:13px; color:#8A6A6C;">Hanken Grotesk</div>
+        </div>
+        <div style="font-family:'Hanken Grotesk',sans-serif; font-weight:700; font-size:108px; line-height:1; letter-spacing:-0.03em; margin:18px 0 4px;">Aa</div>
+        <div style="font-family:'Hanken Grotesk',sans-serif; font-weight:400; font-size:17px; color:#6E5559;">ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz 0123456789</div>
+        <div style="font-size:13px; color:#8A6A6C; margin-top:18px;">Regular · Medium · Semibold · Bold · Extrabold</div>
+      </div>
+    </div>
+
+    <!-- type scale -->
+    <div style="background:#FFF7F4; border-radius:20px; padding:14px 36px;">
+      <div style="display:flex; align-items:center; gap:28px; padding:24px 0; border-bottom:1px solid #F0E4DD;">
+        <div style="width:150px; flex-shrink:0; font-size:12px; color:#9A827E; line-height:1.4;">Display<br><span style="color:#C0AAA4;">Newsreader Medium · 60</span></div>
+        <div style="font-family:'Newsreader',serif; font-weight:500; font-size:60px; line-height:1; letter-spacing:-0.02em;">Balance you can feel</div>
+      </div>
+      <div style="display:flex; align-items:center; gap:28px; padding:24px 0; border-bottom:1px solid #F0E4DD;">
+        <div style="width:150px; flex-shrink:0; font-size:12px; color:#9A827E; line-height:1.4;">Headline<br><span style="color:#C0AAA4;">Newsreader Medium · 38</span></div>
+        <div style="font-family:'Newsreader',serif; font-weight:500; font-size:38px; line-height:1.05; letter-spacing:-0.01em;">Five strains, one daily ritual</div>
+      </div>
+      <div style="display:flex; align-items:center; gap:28px; padding:24px 0; border-bottom:1px solid #F0E4DD;">
+        <div style="width:150px; flex-shrink:0; font-size:12px; color:#9A827E; line-height:1.4;">Subhead<br><span style="color:#C0AAA4;">Newsreader Italic · 23</span></div>
+        <div style="font-family:'Newsreader',serif; font-style:italic; font-weight:400; font-size:23px; line-height:1.2; color:#6E5559;">supports healthy vaginal flora*</div>
+      </div>
+      <div style="display:flex; align-items:flex-start; gap:28px; padding:24px 0; border-bottom:1px solid #F0E4DD;">
+        <div style="width:150px; flex-shrink:0; font-size:12px; color:#9A827E; line-height:1.4;">Body<br><span style="color:#C0AAA4;">Hanken Regular · 17/1.6</span></div>
+        <div style="font-family:'Hanken Grotesk',sans-serif; font-weight:400; font-size:17px; line-height:1.6; color:#3A1418; max-width:560px;">A probiotic + prebiotic + cranberry formula for women's intimate wellness — designed to support normal feminine pH balance and daily freshness as part of a calm routine.</div>
+      </div>
+      <div style="display:flex; align-items:center; gap:28px; padding:24px 0; border-bottom:1px solid #F0E4DD;">
+        <div style="width:150px; flex-shrink:0; font-size:12px; color:#9A827E; line-height:1.4;">Label<br><span style="color:#C0AAA4;">Hanken Semibold · 12 · 0.34em</span></div>
+        <div style="font-family:'Hanken Grotesk',sans-serif; font-weight:600; font-size:12px; letter-spacing:0.34em; text-transform:uppercase; color:#DE1C36;">By Danchel</div>
+      </div>
+      <div style="display:flex; align-items:center; gap:28px; padding:24px 0;">
+        <div style="width:150px; flex-shrink:0; font-size:12px; color:#9A827E; line-height:1.4;">Caption<br><span style="color:#C0AAA4;">Hanken Medium · 13</span></div>
+        <div style="font-family:'Hanken Grotesk',sans-serif; font-weight:500; font-size:13px; color:#8A6A6C;">*These statements have not been evaluated by the FDA. Daily Value not established.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ 04 — ICONOGRAPHY ============================ -->
+  <section style="padding:56px 0 24px;">
+    <div style="display:flex; align-items:baseline; gap:16px; border-top:1px solid #D8CFC6; padding-top:26px; margin-bottom:36px;">
+      <span style="font-family:'Newsreader',serif; font-style:italic; font-size:20px; color:#C2566B;">04</span>
+      <h2 style="font-family:'Newsreader',serif; font-weight:500; font-size:32px; letter-spacing:-0.01em; margin:0;">Iconography</h2>
+      <span style="font-size:14px; color:#8A6A6C; margin-left:6px;">A single monoline family for the benefit set — round caps, even weight, set in blush wells.</span>
+    </div>
+
+    <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:16px;">
+      <!-- pH Balance -->
+      <div style="background:#FFF7F4; border-radius:18px; padding:30px; display:flex; flex-direction:column; align-items:center; gap:18px;">
+        <div style="width:96px; height:96px; border-radius:50%; background:#FBD9DC; display:flex; align-items:center; justify-content:center;">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="#DE1C36" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="24" y1="11" x2="24" y2="36"/>
+            <line x1="12" y1="16" x2="36" y2="16"/>
+            <path d="M8 16 Q12 25 16 16"/>
+            <path d="M32 16 Q36 25 40 16"/>
+            <line x1="17" y1="38" x2="31" y2="38"/>
+            <circle cx="24" cy="11" r="0.5"/>
+          </svg>
+        </div>
+        <div style="text-align:center;">
+          <div style="font-family:'Newsreader',serif; font-size:20px; font-weight:500;">pH Balance</div>
+          <div style="font-size:13px; color:#8A6A6C; margin-top:3px;">Helps maintain normal pH*</div>
+        </div>
+      </div>
+      <!-- Freshness -->
+      <div style="background:#FFF7F4; border-radius:18px; padding:30px; display:flex; flex-direction:column; align-items:center; gap:18px;">
+        <div style="width:96px; height:96px; border-radius:50%; background:#FBD9DC; display:flex; align-items:center; justify-content:center;">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="#DE1C36" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 37 C12 31 20 29 16 23 C12 17 20 15 16 10"/>
+            <path d="M24 37 C20 31 28 29 24 23 C20 17 28 15 24 10"/>
+            <path d="M32 37 C28 31 36 29 32 23 C28 17 36 15 32 10"/>
+          </svg>
+        </div>
+        <div style="text-align:center;">
+          <div style="font-family:'Newsreader',serif; font-size:20px; font-weight:500;">Freshness</div>
+          <div style="font-size:13px; color:#8A6A6C; margin-top:3px;">Daily feminine confidence*</div>
+        </div>
+      </div>
+      <!-- Flora -->
+      <div style="background:#FFF7F4; border-radius:18px; padding:30px; display:flex; flex-direction:column; align-items:center; gap:18px;">
+        <div style="width:96px; height:96px; border-radius:50%; background:#FBD9DC; display:flex; align-items:center; justify-content:center;">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="#DE1C36" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="24" cy="24" r="4.5" fill="#DE1C36" stroke="none"/>
+            <circle cx="24" cy="11" r="3.4"/>
+            <circle cx="24" cy="37" r="3.4"/>
+            <circle cx="13" cy="17.5" r="3.4"/>
+            <circle cx="35" cy="17.5" r="3.4"/>
+            <circle cx="13" cy="30.5" r="3.4"/>
+            <circle cx="35" cy="30.5" r="3.4"/>
+          </svg>
+        </div>
+        <div style="text-align:center;">
+          <div style="font-family:'Newsreader',serif; font-size:20px; font-weight:500;">Healthy Flora</div>
+          <div style="font-size:13px; color:#8A6A6C; margin-top:3px;">Supports normal microbiome*</div>
+        </div>
+      </div>
+      <!-- Yeast Balance -->
+      <div style="background:#FFF7F4; border-radius:18px; padding:30px; display:flex; flex-direction:column; align-items:center; gap:18px;">
+        <div style="width:96px; height:96px; border-radius:50%; background:#FBD9DC; display:flex; align-items:center; justify-content:center;">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="#DE1C36" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="24" cy="24" r="15"/>
+            <path d="M17 24.5 L22 29.5 L31 18.5"/>
+          </svg>
+        </div>
+        <div style="text-align:center;">
+          <div style="font-family:'Newsreader',serif; font-size:20px; font-weight:500;">Yeast Balance</div>
+          <div style="font-size:13px; color:#8A6A6C; margin-top:3px;">Part of a balanced routine*</div>
+        </div>
+      </div>
+      <!-- Moisture -->
+      <div style="background:#FFF7F4; border-radius:18px; padding:30px; display:flex; flex-direction:column; align-items:center; gap:18px;">
+        <div style="width:96px; height:96px; border-radius:50%; background:#FBD9DC; display:flex; align-items:center; justify-content:center;">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="#DE1C36" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M24 9 C24 9 35 23 35 30 A11 11 0 0 1 13 30 C13 23 24 9 24 9 Z"/>
+            <path d="M19 30 A5 5 0 0 0 24 35"/>
+          </svg>
+        </div>
+        <div style="text-align:center;">
+          <div style="font-family:'Newsreader',serif; font-size:20px; font-weight:500;">Moisture &amp; Comfort</div>
+          <div style="font-size:13px; color:#8A6A6C; margin-top:3px;">Everyday comfort support*</div>
+        </div>
+      </div>
+      <!-- Urinary / Cranberry -->
+      <div style="background:#FFF7F4; border-radius:18px; padding:30px; display:flex; flex-direction:column; align-items:center; gap:18px;">
+        <div style="width:96px; height:96px; border-radius:50%; background:#FBD9DC; display:flex; align-items:center; justify-content:center;">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="#DE1C36" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="19" cy="30" r="6.5" fill="#DE1C36" stroke="none"/>
+            <circle cx="30" cy="32" r="6.5"/>
+            <path d="M19 23.5 L23 13"/>
+            <path d="M30 25.5 L25 14"/>
+            <path d="M24 13 C28 9 33 11 33 11 C33 11 31 16 26 15"/>
+          </svg>
+        </div>
+        <div style="text-align:center;">
+          <div style="font-family:'Newsreader',serif; font-size:20px; font-weight:500;">Urinary Comfort</div>
+          <div style="font-size:13px; color:#8A6A6C; margin-top:3px;">Cranberry for UT wellness*</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ 05 — IN ACTION ============================ -->
+  <section style="padding:56px 0 80px;">
+    <div style="display:flex; align-items:baseline; gap:16px; border-top:1px solid #D8CFC6; padding-top:26px; margin-bottom:36px;">
+      <span style="font-family:'Newsreader',serif; font-style:italic; font-size:20px; color:#C2566B;">05</span>
+      <h2 style="font-family:'Newsreader',serif; font-weight:500; font-size:32px; letter-spacing:-0.01em; margin:0;">Putting it together</h2>
+      <span style="font-size:14px; color:#8A6A6C; margin-left:6px;">The system on a Meta-feed tile and a product card — logo, color, type, icons working as one.</span>
+    </div>
+
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:20px;">
+      <!-- Feed ad tile -->
+      <div style="background:#F2867E; border-radius:20px; padding:44px 46px; aspect-ratio:1/1; display:flex; flex-direction:column; justify-content:space-between;">
+        <div style="display:flex; justify-content:space-between; align-items:flex-start;">
+          <div>
+            <div style="font-family:'Newsreader',serif; font-weight:500; font-size:40px; line-height:0.82; color:#FFF7F4; letter-spacing:-0.03em;">mood</div>
+            <div style="font-size:10px; font-weight:600; letter-spacing:0.36em; text-transform:uppercase; color:rgba(255,247,244,0.85); margin-top:8px;">by Danchel</div>
+          </div>
+          <div style="background:#FFF7F4; color:#DE1C36; font-size:11px; font-weight:700; letter-spacing:0.08em; padding:7px 13px; border-radius:999px; white-space:nowrap;">5-IN-1</div>
+        </div>
+        <div>
+          <div style="font-family:'Newsreader',serif; font-weight:500; font-size:48px; line-height:1.0; color:#FFF7F4; letter-spacing:-0.02em;">Balance,<br>down there.</div>
+          <p style="font-family:'Hanken Grotesk'; font-size:15px; line-height:1.5; color:rgba(255,247,244,0.92); margin:16px 0 22px; max-width:330px;">A daily probiotic + cranberry ritual that supports healthy flora and feminine freshness.*</p>
+          <div style="display:inline-flex; align-items:center; gap:8px; background:#DE1C36; color:#FFF7F4; font-weight:600; font-size:15px; padding:13px 26px; border-radius:999px;">Shop Mood</div>
+        </div>
+      </div>
+
+      <!-- Product card -->
+      <div style="background:#FFF7F4; border-radius:20px; padding:36px; display:flex; flex-direction:column; justify-content:space-between;">
+        <div>
+          <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:24px;">
+            <div style="font-family:'Newsreader',serif; font-weight:500; font-size:28px; letter-spacing:-0.02em;">mood</div>
+            <div style="font-size:10px; font-weight:600; letter-spacing:0.34em; text-transform:uppercase; color:#B49A95;">by Danchel</div>
+          </div>
+          <!-- placeholder product shot -->
+          <div style="background:linear-gradient(135deg,#FBD9DC 25%,#F7CDD0 25%,#F7CDD0 50%,#FBD9DC 50%,#FBD9DC 75%,#F7CDD0 75%); background-size:16px 16px; border-radius:14px; height:188px; display:flex; align-items:center; justify-content:center; margin-bottom:24px;">
+            <span style="font-family:'Hanken Grotesk',monospace; font-size:12px; letter-spacing:0.1em; color:#C2566B; background:rgba(255,247,244,0.8); padding:6px 12px; border-radius:6px;">product shot</span>
+          </div>
+          <div style="font-family:'Newsreader',serif; font-weight:500; font-size:26px; line-height:1.1; letter-spacing:-0.01em;">Vaginal Probiotic</div>
+          <div style="font-family:'Newsreader',serif; font-style:italic; font-size:16px; color:#8A6A6C; margin-top:4px;">60 capsules · 30-day supply</div>
+        </div>
+        <div style="display:flex; gap:10px; margin-top:24px;">
+          <div style="display:flex; align-items:center; gap:7px; background:#FBD9DC; color:#9E1B3A; font-size:12px; font-weight:600; padding:8px 13px; border-radius:999px;">
+            <span style="width:7px; height:7px; border-radius:50%; background:#DE1C36; display:inline-block;"></span>pH Balance
+          </div>
+          <div style="display:flex; align-items:center; gap:7px; background:#FBD9DC; color:#9E1B3A; font-size:12px; font-weight:600; padding:8px 13px; border-radius:999px;">
+            <span style="width:7px; height:7px; border-radius:50%; background:#DE1C36; display:inline-block;"></span>Healthy Flora
+          </div>
+          <div style="display:flex; align-items:center; gap:7px; background:#FBD9DC; color:#9E1B3A; font-size:12px; font-weight:600; padding:8px 13px; border-radius:999px;">
+            <span style="width:7px; height:7px; border-radius:50%; background:#DE1C36; display:inline-block;"></span>Cranberry
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="text-align:center; font-size:13px; color:#9A827E; margin-top:30px; line-height:1.6;">
+      Mood — by Danchel · Brand kit v1 · Keep claims to support language (“supports,” “helps maintain”). Avoid treatment claims.
+    </div>
+  </section>
+
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{
+  &quot;tagline&quot;: { &quot;editor&quot;: &quot;text&quot;, &quot;default&quot;: &quot;Feel good, down there.&quot;, &quot;tsType&quot;: &quot;string&quot; },
+  &quot;coverHeadline&quot;: { &quot;editor&quot;: &quot;text&quot;, &quot;default&quot;: &quot;Daily intimate wellness, made calm.&quot;, &quot;tsType&quot;: &quot;string&quot; }
+}">
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      tagline: this.props.tagline ?? "Feel good, down there.",
+      coverHeadline: this.props.coverHeadline ?? "Daily intimate wellness, made calm.",
+    };
+  }
+}
+</script>
+</body>
+</html>
