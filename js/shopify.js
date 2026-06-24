@@ -8,9 +8,9 @@
   // variantMatch: a substring to find the right variant by title (case-insensitive).
   // sellingPlanId: numeric selling plan ID, or null for a one-time purchase.
   var PLAN_CONFIG = {
-    0: { variantMatch: 'Monthly',   sellingPlanId: null },        // one-time
-    1: { variantMatch: 'Monthly',   sellingPlanId: '2725085365' }, // Monthly, $10 off — $38.89
-    2: { variantMatch: 'Quarterly', sellingPlanId: '2725118133' }, // Quarterly, $20 off — $66.67 / 3 months
+    0: { variantMatch: 'Monthly',   sellingPlanId: null,          value: 48.89 }, // one-time
+    1: { variantMatch: 'Monthly',   sellingPlanId: '2725085365', value: 38.89 }, // Monthly, $10 off
+    2: { variantMatch: 'Quarterly', sellingPlanId: '2725118133', value: 86.87 }, // Quarterly, $20 off
   };
 
   var variantsByTitle = {}; // lowercased title substring → variant GID
@@ -116,6 +116,16 @@
       var originalText = btn.textContent;
       btn.dataset.loading = 'true';
       btn.textContent = 'Redirecting…';
+
+      if (typeof fbq === 'function') {
+        fbq('track', 'InitiateCheckout', {
+          value: config.value,
+          currency: 'USD',
+          content_ids: [variantId],
+          content_type: 'product',
+          num_items: 1,
+        });
+      }
 
       createCheckout(variantId, config.sellingPlanId).then(function (url) {
         if (url) {

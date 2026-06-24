@@ -8,6 +8,25 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500;1,6..72,600&family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '2093374727886078');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=2093374727886078&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
 <style>
   * { box-sizing: border-box; }
   body { margin: 0; }
@@ -179,7 +198,7 @@
         <span style="font-size:18px; color:#B49A95; text-decoration:line-through;">$32</span>
         <span style="font-size:14px; color:#8A6A6C; font-weight:600;">/ 30-day supply</span>
       </div>
-      <a href="https://mood.officialdanchel.com" style="display:block; text-align:center; text-decoration:none; background:#DE1C36; color:#FFF7F4; font-size:18px; font-weight:700; padding:18px; border-radius:999px; box-shadow:0 12px 28px rgba(222,28,54,0.3);">Check availability &rarr;</a>
+      <a href="https://mood.officialdanchel.com?utm_source=advertorial&utm_medium=article&utm_campaign=dr-ellison&utm_content=offer-box" style="display:block; text-align:center; text-decoration:none; background:#DE1C36; color:#FFF7F4; font-size:18px; font-weight:700; padding:18px; border-radius:999px; box-shadow:0 12px 28px rgba(222,28,54,0.3);">Check availability &rarr;</a>
       <div style="display:flex; justify-content:center; gap:22px; margin-top:18px; flex-wrap:wrap;">
         <span style="display:flex; align-items:center; gap:7px; font-size:13px; font-weight:600; color:#8A6A6C;"><span style="color:#DE1C36;">✓</span> Free shipping</span>
         <span style="display:flex; align-items:center; gap:7px; font-size:13px; font-weight:600; color:#8A6A6C;"><span style="color:#DE1C36;">✓</span> 60-day guarantee</span>
@@ -413,13 +432,22 @@
         <div style="font-weight:700; font-size:14px; color:#3A1418; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">Mood Vaginal Probiotic</div>
         <div style="font-size:12.5px; color:#9E1B3A; font-weight:600;">Reader price · 30% off today</div>
       </div>
-      <a href="https://mood.officialdanchel.com" style="text-decoration:none; background:#DE1C36; color:#FFF7F4; font-size:15px; font-weight:700; padding:13px 24px; border-radius:999px; white-space:nowrap; box-shadow:0 8px 20px rgba(222,28,54,0.28);">Get 30% off</a>
+      <a href="https://mood.officialdanchel.com?utm_source=advertorial&utm_medium=article&utm_campaign=dr-ellison&utm_content=sticky-cta" style="text-decoration:none; background:#DE1C36; color:#FFF7F4; font-size:15px; font-weight:700; padding:13px 24px; border-radius:999px; white-space:nowrap; box-shadow:0 8px 20px rgba(222,28,54,0.28);">Get 30% off</a>
     </div>
   </div>
 
 </div>
 
 <script>
+  // Fire a pixel event the moment someone clicks through to the sales page
+  document.querySelectorAll('a[href*="mood.officialdanchel.com"]').forEach(function (link) {
+    link.addEventListener('click', function () {
+      if (typeof fbq === 'function') {
+        fbq('trackCustom', 'AdvertorialCTAClick', { content_name: 'dr-ellison' });
+      }
+    });
+  });
+
   // Reveal the remaining comments on click
   document.getElementById('view-more').addEventListener('click', function () {
     document.querySelectorAll('.hidden-comment').forEach(function (el) {
