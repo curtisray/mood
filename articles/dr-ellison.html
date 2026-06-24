@@ -20,10 +20,14 @@ t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
 fbq('init', '2093374727886078');
+fbq('init', '1049642800756244');
 fbq('track', 'PageView');
 </script>
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=2093374727886078&ev=PageView&noscript=1"
+/></noscript>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1049642800756244&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
 
@@ -32,6 +36,23 @@ src="https://www.facebook.com/tr?id=2093374727886078&ev=PageView&noscript=1"
   body { margin: 0; }
   .hidden-comment { display: none; }
   .like-trigger { cursor: pointer; }
+
+  /* Google Translate widget — suppress the top banner + iframe shift it injects */
+  body { top: 0 !important; position: static !important; }
+  .goog-te-banner-frame { display: none !important; }
+  .lang-toggle { font-family: 'Hanken Grotesk', sans-serif; }
+  .lang-toggle .goog-te-gadget { font-size: 0 !important; }
+  .lang-toggle .goog-te-gadget-simple {
+    background: #FBD9DC !important;
+    border: none !important;
+    border-radius: 999px !important;
+    padding: 7px 14px !important;
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    color: #9E1B3A !important;
+    cursor: pointer;
+  }
+  .lang-toggle .goog-te-gadget-simple .goog-te-menu-value span { color: #9E1B3A !important; }
 </style>
 </head>
 <body>
@@ -45,9 +66,12 @@ src="https://www.facebook.com/tr?id=2093374727886078&ev=PageView&noscript=1"
 
   <!-- ============ EDITORIAL MASTHEAD ============ -->
   <div style="border-bottom:1px solid #EBDED6; background:#FFF7F4;">
-    <div style="max-width:680px; margin:0 auto; padding:18px 22px; display:flex; align-items:center; justify-content:space-between;">
+    <div style="max-width:680px; margin:0 auto; padding:18px 22px; display:flex; align-items:center; justify-content:space-between; gap:14px;">
       <div style="font-family:'Newsreader',serif; font-weight:600; font-size:23px; letter-spacing:-0.01em; color:#3A1418;">The Balance Edit</div>
-      <div style="font-size:11px; font-weight:700; letter-spacing:0.18em; text-transform:uppercase; color:#B49A95;">Women's Health</div>
+      <div style="display:flex; align-items:center; gap:14px;">
+        <div id="google_translate_element" class="lang-toggle"></div>
+        <div style="font-size:11px; font-weight:700; letter-spacing:0.18em; text-transform:uppercase; color:#B49A95;">Women's Health</div>
+      </div>
     </div>
   </div>
 
@@ -469,5 +493,16 @@ src="https://www.facebook.com/tr?id=2093374727886078&ev=PageView&noscript=1"
     });
   });
 </script>
+
+<!-- Google Translate (English -> Spanish toggle) -->
+<script>
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement(
+      { pageLanguage: 'en', includedLanguages: 'es', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false },
+      'google_translate_element'
+    );
+  }
+</script>
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 </html>

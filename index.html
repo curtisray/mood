@@ -20,10 +20,14 @@ t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
 fbq('init', '2093374727886078');
+fbq('init', '1049642800756244');
 fbq('track', 'PageView');
 </script>
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=2093374727886078&ev=PageView&noscript=1"
+/></noscript>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1049642800756244&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
 
@@ -45,6 +49,22 @@ src="https://www.facebook.com/tr?id=2093374727886078&ev=PageView&noscript=1"
   details.faq-item[open] .faq-plus { transform: rotate(45deg); }
   .faq-plus { transition: transform .2s; display: inline-block; }
 
+  /* Google Translate widget — suppress the top banner + iframe shift it injects */
+  body { top: 0 !important; position: static !important; }
+  .goog-te-banner-frame { display: none !important; }
+  .lang-toggle { font-family: 'Hanken Grotesk', sans-serif; }
+  .lang-toggle .goog-te-gadget { font-size: 0 !important; }
+  .lang-toggle .goog-te-gadget-simple {
+    background: #FBD9DC !important;
+    border: none !important;
+    border-radius: 999px !important;
+    padding: 7px 14px !important;
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    color: #9E1B3A !important;
+    cursor: pointer;
+  }
+  .lang-toggle .goog-te-gadget-simple .goog-te-menu-value span { color: #9E1B3A !important; }
 </style>
 </head>
 <body>
@@ -67,6 +87,7 @@ src="https://www.facebook.com/tr?id=2093374727886078&ev=PageView&noscript=1"
         <a href="#benefits" style="text-decoration:none; color:#6E5559; font-size:14px; font-weight:600;">Benefits</a>
         <a href="#inside" style="text-decoration:none; color:#6E5559; font-size:14px; font-weight:600;">What's inside</a>
         <a href="#reviews" style="text-decoration:none; color:#6E5559; font-size:14px; font-weight:600;">Reviews</a>
+        <div id="google_translate_element" class="lang-toggle"></div>
         <a href="#offer" style="text-decoration:none; background:#DE1C36; color:#FFF7F4; font-size:14px; font-weight:700; padding:11px 22px; border-radius:999px; white-space:nowrap;">Shop now</a>
       </div>
     </div>
@@ -498,5 +519,16 @@ src="https://www.facebook.com/tr?id=2093374727886078&ev=PageView&noscript=1"
 </div>
 
 <script src="js/shopify.js"></script>
+
+<!-- Google Translate (English -> Spanish toggle) -->
+<script>
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement(
+      { pageLanguage: 'en', includedLanguages: 'es', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false },
+      'google_translate_element'
+    );
+  }
+</script>
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 </html>
