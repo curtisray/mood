@@ -14,25 +14,25 @@ All marketing and copy uses structure/function claim language only — no diseas
 - [x] AI training document (product facts, ingredient data, compliance rules, safe/avoid claim language)
 - [x] GitHub repository
 - [x] Brand identity (logo, color system, typography) — see `assets/Mood Brand Kit.dc.html`
-- [ ] Domain + hosting setup
+- [x] Domain + hosting setup
 
 ### Product Page
-- [ ] Hero section
-- [ ] Ingredient breakdown (probiotics, XOS, cranberry)
-- [ ] Benefits section (copy-compliant with supplement claim rules)
-- [ ] Supplement facts panel
-- [ ] Product photography / imagery
-- [ ] Add to cart / purchase flow
+- [x] Hero section
+- [x] Ingredient breakdown (probiotics, XOS, cranberry)
+- [x] Benefits section (copy-compliant with supplement claim rules)
+- [x] Supplement facts panel
+- [x] Product photography / imagery
+- [x] Add to cart / purchase flow
 
 ### Marketing & Tracking
-- [ ] Meta Pixel base code + standard events
-- [ ] Email capture / lead flow
-- [ ] Landing page variant(s) for paid ads
+- [x] Meta Pixel base code + standard events
+- [x] Email capture / lead flow
+- [x] Landing page variant(s) for paid ads
 
 ### Content
-- [ ] FAQ (ingredient questions, usage, expectations)
-- [ ] About / brand story
-- [ ] Disclaimer and legal copy
+- [x] FAQ (ingredient questions, usage, expectations)
+- [x] About / brand story
+- [x] Disclaimer and legal copy
 
 ---
 
